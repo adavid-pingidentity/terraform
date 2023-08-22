@@ -41,7 +41,7 @@ resource "pingone_application_resource_grant" "resource_grant1" {
 }
 
 # OIDC request:
-# https://auth.pingone.com/f59504de-3c45-4a37-8d70-d5ad75dfaaa0/as/authorize?scope=profile&client_id=84c6d61f-52f2-45fd-8119-73aaed490242&redirect_uri=https://example.com&response_type=id_token token&prompt=login&grant_type=implicit
+# https://auth.pingone.com/f59504de-3c45-4a37-8d70-d5ad75dfaaa0/as/authorize?scope=openid&client_id=84c6d61f-52f2-45fd-8119-73aaed490242&redirect_uri=https://example.com&response_type=id_token token&prompt=login&grant_type=implicit
 
 resource "pingone_mfa_policy" "mfa_policy" {
   environment_id = data.pingone_environment.env.id
